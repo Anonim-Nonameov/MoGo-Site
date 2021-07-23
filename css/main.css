@@ -243,6 +243,10 @@ hr {
     padding: 80px 0;
 }
 
+.section--gray {
+    background-color: #f8f8f8;
+}
+
 .section--devices {
     margin-bottom: 40px;
     padding-bottom: 0;
@@ -261,7 +265,7 @@ hr {
 }
 
 .section__suptitle {
-    font-family: 'Kaushan Script';
+    font-family: 'Kaushan Script', cursive;
     font-size: 24px;
 
     color: #333;
@@ -533,4 +537,89 @@ hr {
 
     text-transform: uppercase;
     color: #333;
+}
+
+/* Reviews */
+
+.reviews {
+    position: relative;
+
+    padding: 0 110px;
+}
+
+.reviews__item {
+    position: relative; 
+
+    padding-left: 205px;
+}
+
+.reviews__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews__text {
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.reviews__author {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+
+    color: #333;
+}
+
+.reviews__author:before {
+    content: "";
+    display: inline-block;
+
+    width: 60px;
+    height: 3px;
+
+    margin-right: 10px;
+    vertical-align: middle;
+    background-color: #f38181;
+}
+
+.reviews__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+
+    color: transparent;
+    font-size: 0;
+
+    transform: translateY(-50%);
+}
+
+.reviews__btn:after {
+    content: "";
+    display: block;
+
+    width: 15px;
+    height: 15px;
+
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+
+}
+
+.reviews__btn--prev {
+    left: 0;
+
+    transform: rotate(-45deg);
+}
+
+.reviews__btn--next {
+    right: 0;
+
+    transform: rotate(135deg);
 }
