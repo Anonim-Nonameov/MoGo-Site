@@ -305,7 +305,7 @@ hr {
     margin-top: 80px;
 }
 
-.card__item {
+.card__inner {
     width: 379.5px;
 }
 
@@ -315,15 +315,15 @@ hr {
     background-color: #95e1d3;
 }
 
-.card__item:hover .card__img {
+.card__inner:hover .card__img {
     transform: translate3d(-10px, -10px, 0px);
 }
 
-.card__item:hover .card__img img {
+.card__inner:hover .card__img img {
     opacity: 0.1;
 }
 
-.card__item:hover .card__text {
+.card__inner:hover .card__text {
     opacity: 1;
 }
 
@@ -363,13 +363,15 @@ hr {
     margin-top: 20px;
 
     text-align: center;
-}
-
+}  
 .card__name {
     font-family: 'Montserrat';
     font-size: 14px;
 
+    color: #333;
     text-transform: uppercase;
+
+    margin-bottom: 5px;
 }
 
 .card__prof {
@@ -377,6 +379,8 @@ hr {
     font-style: italic;
     font-weight: 300;
     font-size: 15px;
+
+    color: #999;
 }
 
 /* Statistics */
@@ -679,4 +683,11 @@ hr {
 .social__item:hover {
     color: #fff;
     background-color: #f38181;
+}
+
+/* Logos */
+
+.logos {
+    display: flex;
+    justify-content: space-between;
 }
