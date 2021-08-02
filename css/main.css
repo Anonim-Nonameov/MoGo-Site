@@ -30,8 +30,10 @@ hr {
 
 .container {
      width: 100%;
-     max-width: 1200px;
+     max-width: 1230px;
+
      margin: 0 auto;
+     padding: 0 15px;
 }
 
 /* Header */
@@ -300,9 +302,10 @@ hr {
     display: block;
     width: 60px;
     height: 3px;
-    margin: 30px auto 30px;
 
     background-color: #f38181;
+    
+    margin: 30px auto 30px;
 }
 
 .section__text {
@@ -317,12 +320,15 @@ hr {
 .card {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
-    margin-top: 80px;
+    margin: 80px -15px 0;
 }
 
-.card__inner {
-    width: 379.5px;
+.card__item {
+    width: 33.33333%;
+
+    padding: 0 15px;
 }
 
 .card__inner {
@@ -336,7 +342,7 @@ hr {
 }
 
 .card__inner:hover .card__img img {
-    opacity: 0.1;
+    opacity: .1;
 }
 
 .card__inner:hover .card__text {
@@ -352,6 +358,10 @@ hr {
 
 .card__img img {
     display: block;
+
+    max-width: 100%;
+    height: auto;
+
     transition: opacity .1s linear;
 }
 
@@ -407,6 +417,7 @@ hr {
 
 .stat {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .stat__item {
@@ -440,14 +451,19 @@ hr {
 
 .services {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .services__item {
+    width: 33.33333%;
     position: relative;
-    flex: 1 1 0;
 
-    padding-left: 85px;
-    padding-right: 20px;
+    padding: 0 35px 40px 85px;
+    margin-bottom: 40px;
+}
+
+.services__item--border {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .services__icon {
@@ -485,6 +501,8 @@ hr {
 
 .devices__item {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .devices__item--iphone {
@@ -1211,4 +1229,197 @@ hr {
 
 .copyright span {
     color: #f38181;
+}
+
+@media (max-width: 1230px) {
+
+    /* Intro */
+
+    .intro__suptitle {
+        font-size: 52px
+    }
+
+    .intro__title {
+        font-size: 120px;
+    }
+
+}
+
+@media (max-width: 990px) {
+
+    /* Intro */
+
+    .intro__inner {
+        margin-top: 90px;
+    }
+
+    .intro__suptitle {
+        font-size: 32px
+    }
+
+    .intro__title {
+        font-size: 80px
+    }
+
+
+    /* Statistics */
+
+    .stat {
+        justify-content: center;
+    }
+
+    .stat__item {
+        width: 33.33333%;
+        flex: none;
+
+        border: 0;
+
+        padding-top: 30px;
+        padding-bottom: 30px
+    }
+
+    .stat__item:last-child {
+        border-right: 0;
+    }
+
+    /* Services */
+
+    .services__item {
+        width: 50%;
+
+        padding-bottom: 0
+    }
+
+    .services__item--border {
+        border-bottom: 0;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    /* Navigation */
+
+    .nav {
+        display: none;
+    }
+
+    /* Section */
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .section--devices {
+        padding-bottom: 0;
+    }
+
+    /* Card */
+
+    .card {
+        justify-content: center;
+
+        margin-top: 50px;
+    }
+
+    .card__item  {
+        width: 100%;
+        max-width: 410px;
+
+        margin-bottom: 30px
+    }
+
+    .card__item:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Slider */
+
+    .slider__text {
+        display: none;
+    }
+
+    .slider__item.active:before {
+        width: 50%;
+    }
+
+    /* Services */
+
+    .services {
+        justify-content: center;
+    }
+
+    .services__item {
+        width: 100%;
+        max-width: 400px
+
+        padding-left: 55px;
+        padding-right: 0;
+    }
+
+    .services__icon {
+        left: 0;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+
+    /* Intro */
+
+    .intro__suptitle {
+        font-size: 22px;
+    }
+
+    .intro__title {
+        font-size: 40px;
+    }
+
+    /* Section */
+
+    .section__header {
+        margin-bottom: 50px;
+    }
+
+    .section__suptitle {
+        font-size: 20px
+    }
+
+    .section__title{
+        font-size: 24px;
+    }
+
+    .section__title:after {
+        margin: 20px auto;
+    }
+
+    /* Statistics */
+
+    .stat__item {
+        width: 100%;
+
+        border-bottom: 1px solid #b5eae0;
+    }
+
+    .stat_item:last-child {
+        border-bottom: 0;
+    }
+
+    .stat__count {
+        font-size: 52px;
+    }
+
+    /* Devices */
+
+    .devices {
+        max-width: 320px;
+    }
+
+    .devices__item--iphone {
+        width: 180px;
+        bottom: -50px;
+        right: -80px;
+    }
+
 }
