@@ -19,18 +19,18 @@
 
 <!-- Header -->
 
-<header class="header"> <!-- .header -->
+<header class="header" id="header"> <!-- .header -->
     <div class="container"> <!-- .container  -->
 
         <div class="header__inner"> <!-- .header__inner -->
-            <div class="header__logo">MoGo</div>
+            <div class="header__logo" data-scroll="#intro">MoGo</div>
 
-            <nav class="nav">
-                <a class="nav__link active" href="#">About</a>
-                <a class="nav__link" href="#">Service</a>
-                <a class="nav__link" href="#">Blog</a>
-                <a class="nav__link" href="#">Work</a>
-                <a class="nav__link" href="#">Contact</a>
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#about">About</a>
+                <a class="nav__link" href="#" data-scroll="#services">Service</a>
+                <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
+                <a class="nav__link" href="#" data-scroll="#works">Work</a>
+                <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
                 <a class="nav__link" href="#">
                     <i class="fas fa-shopping-cart"></i>
                 </a>
@@ -39,7 +39,7 @@
                 </a>
             </nav>
 
-            <button class="nav-toggle" type="button">
+            <button class="nav-toggle" id="nav_toggle" type="button">
                 <span class="nav-toggle__item">Menu</span>
             </button>
         </div> <!-- .header__inner end -->
@@ -51,7 +51,7 @@
 
 <!-- Intro -->
 
-    <div class="intro"> <!-- .intro -->
+    <div class="intro" id="intro"> <!-- .intro -->
         <div class="container"> <!-- .container -->
 
             <div class="intro__inner">
@@ -92,9 +92,9 @@
 
     </div><!-- .intro end -->
 
-<!-- About us -->
+<!-- About -->
 
-    <section class="section"> <!-- .section -->
+    <section class="section" id="about"> <!-- .section -->
         <div class="container"> <!-- .container -->
 
             <div class="section__header"> <!-- .section__header -->
@@ -174,7 +174,7 @@
 
 <!-- Services -->
 
-    <section class="section"> <!-- .section -->
+    <section class="section" id="services"> <!-- .section -->
         <div class="container"> <!-- .container -->
 
             <div class="section__header"> <!-- .section__header -->
@@ -249,7 +249,7 @@
         </div> <!-- .container end -->
     </section> <!-- .section end -->
 
-<!-- What we do -->
+<!-- Wedo -->
 
     <section class="section"> <!-- .section -->
         <div class="container"> <!-- .container -->
@@ -317,7 +317,7 @@
         </div> <!-- .container end -->
     </section> <!-- .section end -->
 
-<!-- Slider -->
+<!-- Slider (reviews 1) -->
 
     <div class="section  section--gray"> <!-- .section -->
         <div class="container"> <!-- .container -->
@@ -476,12 +476,12 @@
 
 <!-- Works -->
 
-    <section class="section"> <!-- .section -->
+    <section class="section" id="works"> <!-- .section -->
         <div class="container"> <!-- .container -->
 
             <div class="section__header">
                 <h3 class="section__suptitle">What we do</h3>
-                <h2 class="section__title">Some Of Our Work</h2>
+                <h2 class="section__title">Some Of Our Works</h2>
                 <div class="section__text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
@@ -564,7 +564,7 @@
         </div><!-- .works end -->
     </section> <!-- .section end -->
 
-<!-- Slider -->
+<!-- Slider (reviews 2) -->
 
     <div class="section">
         <div class="container">
@@ -583,7 +583,7 @@
         </div>
     </div>
 
-<!-- Our Clients -->
+<!-- Clients -->
 
     <section class="section  section--clients"> <!-- .section -->
         <div class="container"> <!-- .container -->
@@ -636,7 +636,7 @@
 
 <!-- Blog -->
 
-    <section class="section"> <!-- .section -->
+    <section class="section" id="blog"> <!-- .section -->
         <div class="container"> <!-- .container -->
 
             <div class="section__header"> <!-- .section__header -->
@@ -750,7 +750,7 @@
 <!-- Footer -->
 
 
-    <footer class="footer"> <!-- .footer -->
+    <footer class="footer" id="footer"> <!-- .footer -->
         <div class="container"> <!-- .container -->
 
             <div class="footer__inner"> <!-- .footer__inner -->
@@ -857,5 +857,9 @@
 
 </div> <!-- .page end -->
 
+
+<!-- JS (JQuery) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
